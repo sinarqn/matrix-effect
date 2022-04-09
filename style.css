@@ -1,0 +1,45 @@
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html{
+  overflow: hidden;
+}
+body{
+  background-color: #010101;
+  height: 100vh;
+}
+.container{
+  height: 100%;
+  position: relative;
+}
+.line{
+  position: absolute;
+  display: flex;
+  top: -100%;
+  flex-direction: column;
+  color: darkgreen;
+  font-weight: bold;
+  user-select: none;
+}
+
+
+@keyframes fall {
+  from{
+    transform: translateY(-75%);
+  }
+  to{
+    transform: translateY(100%);
+  }
+}
+
+@keyframes fade {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
